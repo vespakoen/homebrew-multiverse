@@ -1,7 +1,7 @@
 class Netdiscover < Formula
   desc "ARP Scanner"
   homepage "http://sourceforge.net/projects/netdiscover/"
-  url "svn://svn.code.sf.net/p/netdiscover/code/trunk"
+  url "svn://svn.code.sf.net/p/netdiscover/code/trunk", :revision => "r115"
   version "0.3-pre-beta7"
 
   depends_on "autoconf" => :build
