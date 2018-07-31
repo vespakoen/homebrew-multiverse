@@ -3,7 +3,7 @@ class Libarea < Formula
   homepage "https://github.com/mtlott/libarea"
   url "https://github.com/mtlott/libarea.git"
   version "1.0"
-  sha256 "77bd855beba3f1a0fe991d44fce6f9b70849ac27"
+  sha256 "e3b1304e6afb8dd8181ebcd95b171a70bd808ac7"
 
   depends_on "cmake" => :build
   depends_on "boost"
