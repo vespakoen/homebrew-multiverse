@@ -90,10 +90,10 @@ class WxmacDev < Formula
     mkdir_p "#{prefix}/source/wxWidgets" if build.with? "debug"
     cp_r ".", "#{prefix}/source/wxWidgets" if build.with? "debug"
     system "make"
-    dsymutil lib/*-3.0.0.3.0.dylib if build.wth? "debug"
+    dsymutil lib/*-3.0.0.3.0.dylib if build.with? "debug"
     system "make", "install"
     
-    lib.install Dir["lib/*.dSYM"] if build.wth? "debug"
+    lib.install Dir["lib/*.dSYM"] if build.with? "debug"
     pkgshare.install "demos", "samples", "utils"
 
     # wx-config should reference the public prefix, not wxmac's keg
