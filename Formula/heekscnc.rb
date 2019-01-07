@@ -10,7 +10,7 @@ class Heekscnc < Formula
   sha256 ""
 
   depends_on "cmake" => :build
-  depends_on "mtlott/multiverse/heekscad"
+  depends_on "vespakoen/multiverse/heekscad"
 
   def install
     system "cmake", ".", *std_cmake_args
